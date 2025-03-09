@@ -132,13 +132,9 @@ Event* Xor2Gate::update(uint64_t current_time){
   char in2 = m_inputs[1]->getState(); 
   char state = 'X';
 
-
-
-
   if(in1 != 'X' && in2 != 'X'){
     state = (in1 != in2) ? '1' : '0'; 
   }
-
 
   if(state != m_current_state){
     m_current_state = state;

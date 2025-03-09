@@ -183,8 +183,8 @@ template< typename T, typename PComparator>
 void Heap<T, PComparator>::trickleDown(size_t idx) {
  while(true){
    size_t goodChild = idx;
-   for(int i = 1; i <= m_; i++){
-     size_t child = m_ * idx + i;
+   for(int i = 0; i < m_; i++){
+     size_t child = m_ * idx + (i + 1);
      if(child < heap_.size() && comparator(heap_[child], heap_[goodChild])){
        goodChild = child;
      }
