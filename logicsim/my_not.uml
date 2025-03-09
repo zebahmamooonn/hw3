@@ -1,3 +1,30 @@
+DEBUG2
+DEBUG4
+DEBUG comparter parent2with child4
+DEBUG6
+DEBUG comparter parent4with child6
+DEBUG8
+DEBUG comparter parent2with child8
+DEBUG comparter parent6with child8
+DEBUG0
+DEBUG swapping2with child4
+DEBUG swapping2with child2
+DEBUG8
+DEBUG comparter parent6with child8
+DEBUG comparter parent4with child8
+DEBUG0
+DEBUG swapping6with child6
+DEBUG103442822472256
+DEBUG swapping2with child2
+DEBUG6
+DEBUG comparter parent2with child6
+DEBUG103442822472256
+DEBUG swapping2with child2
+DEBUG103442822468080
+DEBUG swapping4with child4
+DEBUG103442822468048
+DEBUG4
+DEBUG103442822468048
 @startuml
 binary "input" as W0
 binary "output" as W1
@@ -23,12 +50,6 @@ W0 is high
 
 @4
 W1 is low
-
-@2
-W0 is low
-
-@2
-W1 is high
 
 @enduml
 

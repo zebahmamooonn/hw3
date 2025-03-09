@@ -5,7 +5,7 @@
 #include <vector>
 
 
-template <typename T, typename PComparator = std::less<T> >
+template <typename T, typename PComparator = std::less<T>>
 class Heap
 {
 public:
@@ -86,12 +86,11 @@ private:
 // Add implementation of member functions here
 
 
-template< typename T, typename PComparator>
-Heap<T, PComparator>::Heap(int m, PComparator c) :
-m_(m), comparator(c) {}
+template<typename T, typename PComparator>
+Heap<T, PComparator>::Heap(int m, PComparator c) : m_(m), comparator(c) {}
 
 
-template < typename T, typename PComparator>
+template<typename T, typename PComparator>
 Heap<T, PComparator>::~Heap() = default;
 
 
@@ -107,7 +106,7 @@ void Heap<T, PComparator>::push(const T& item) {
 // We will start top() for you to handle the case of
 // calling top on an empty heap
 template <typename T, typename PComparator>
-T const & Heap<T,PComparator>::top() const
+T const & Heap<T, PComparator>::top() const
 {
  // Here we use exceptions to handle the case of trying
  // to access the top element of an empty heap
@@ -117,15 +116,10 @@ T const & Heap<T,PComparator>::top() const
    // ================================
    throw std::underflow_error("Heap is empty");
 
-
  }
  // If we get here we know the heap has at least 1 item
  // Add code to return the top element
-
-
  return heap_.front();
-
-
 }
 
 
